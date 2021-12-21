@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>CSS Snippet cheatsheet</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Snippet cheatsheet</h1>
+        <p>Ever having trouble recalling the exact syntax for your favorite CSS code? Select any snippet below and it will automatically select all of the code for you to copy.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Flexbox Row</h2>
+            <p>Use these three properties to create a flexbox row layout.</p>
+            <div>
+                <pre><code>.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Flexbox Column</h2>
+            <p>Use these properties to create a flexbox column layout.</p>
+            <div>
+                <pre><code>.column{
+    display: flex;
+    flex-direction: column;
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>CSS Variables</h2>
+            <p>Declare variables at the top of CSS file so that the variables could be reused throughout the file.</p>
+            <div>
+                <pre><code>:root{
+    --white: #FFF;
+    --black: #000;
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Media queries</h2>
+            <p>Define breakpoints and put the media queries at the bottom of the stylesheet.</p>
+            <div>
+                <pre><code>@media screen and (max-width: 768px){
+   .card{
+       width: 90%;
+   }
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Psuedo classes</h2>
+            <p>Declare variables at the top of CSS file so that the variables could be reused throughout the file.</p>
+            <div>
+                <pre><code>.card:hover,
+.card:hover h2
+{
+    box-shadow: 0px 0px 15px var(--pink);
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Psuedo elements</h2>
+            <p>Declare variables at the top of CSS file so that the variables could be reused throughout the file.</p>
+            <div>
+                <pre><code>h2::after{
+    content: 💗;
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💗 and CSS</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/*Declare CSS variables*/
+:root
+{
+    --white: #FFF;
+    --black: #000;
+    --border-radius: 20px;
+    --pink: pink;
+}
+
+body
+{
+    background-color: var(--black);
+    color: var(--pink);
+}
+
+header
+{
+    padding: 3%;
+    text-align: center;
+}
+
+header h1
+{
+    margin: 2% auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card
+{
+    border: 1px dashed var(--white);
+    border-radius: var(--border-radius);
+    padding: 0 2% 1%;
+    margin: 2% 1%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /*To animate an easy transition when user hovers over the card.*/
+    transition: all 1s ease-in-out;
+}
+
+/*When user hovers on a card, a shadow is given for the box. */
+.card:hover,
+.card:hover h2
+{
+    box-shadow: 0px 0px 15px var(--pink);
+}
+
+.card h2
+{
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    padding: 1%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    background-color: var(--black); 
+    transition: all 1s ease-in-out;
+}
+
+.card div
+{
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: var(--border-radius);
+    margin-top: 2%;
+    background-image: linear-gradient(var(--pink),#b54ab5);
+    /*Each card's code block will grow to the height of the largest code block in the page.*/
+    flex-grow: 1;
+}
+
+.card div pre
+{
+    margin: 2%;
+    /*This will add a scrollbar if text overflows.*/
+    overflow:auto;
+}
+
+.card div pre code
+{
+    /*The block would be highlighted if user clicks on it.*/
+    user-select: all;
+}
+
+footer
+{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/*Media queries*/
+ @media screen and (max-width: 992px) {
+    .card
+    {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card
+    {
+        width: 90%;
+        margin: 4% auto;
+    }
+}
