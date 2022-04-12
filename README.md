@@ -1,5 +1,5 @@
 # CSS-Snipet-Cheat-sheet
-CSS Snippet Cheatsheet is a website that holds a collection of CSS snippets.Refer this website for the syntax of some of the CSS snippets.
+CSS Snippet Cheatsheet is a website that holds a collection of CSS snippets. Refer this website for the syntax of some of the CSS snippets.
 
 ## Features
 - Select any snippet by clicking on it and it will select the full code for you to copy.
